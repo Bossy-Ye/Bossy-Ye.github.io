@@ -3,8 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boshuai Ye | Reliable Quantum Workflows and Empirical Validation</title>
+  <title>Boshuai Ye — Quantum Software Engineering, University of Oulu</title>
+  <meta name="description" content="Boshuai Ye is a doctoral researcher in quantum software engineering at the M3S Research Unit, University of Oulu. He works on quantum workflow toolchains, fault-tolerant execution under resource constraints, and empirical claim validation in quantum software.">
+  <link rel="canonical" href="https://bossy-ye.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23184d73'/%3E%3Ctext x='32' y='43' font-family='Georgia, serif' font-size='28' fill='%23ffffff' text-anchor='middle'%3EBY%3C/text%3E%3C/svg%3E">
+  <meta property="og:title" content="Boshuai Ye — Quantum Software Engineering">
+  <meta property="og:description" content="Doctoral researcher at the University of Oulu working on reliable quantum software workflows, fault-tolerant execution, and empirical claim validation.">
+  <meta property="og:url" content="https://bossy-ye.github.io/">
+  <meta property="og:type" content="profile">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Boshuai Ye",
+    "jobTitle": "Doctoral Researcher",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Oulu"
+    },
+    "url": "https://bossy-ye.github.io/",
+    "email": "mailto:boshuai.ye@oulu.fi",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=jIF6lpkAAAAJ",
+      "https://github.com/Bossy-Ye",
+      "https://orcid.org/0009-0000-3480-1234",
+      "https://www.linkedin.com/in/boshuai-ye-b0a739298/",
+      "https://www.researchgate.net/profile/Boshuai-Ye-2"
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -13,9 +41,10 @@
       <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+          <li><a href="research.html">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="cv.html">CV</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -24,128 +53,120 @@
 
   <main class="container">
     <section class="hero">
-      <p class="eyebrow">Research Program</p>
-      <h1>Boshuai Ye</h1>
-      <p class="subtitle">PhD Researcher in Reliable Quantum Workflows and Empirical Validation<br>University of Oulu</p>
-      <p class="hero-intro">
-        My research focuses on trustworthy quantum software workflows across the classical-to-quantum
-        bridge and heterogeneous computing infrastructures. I study how compilation and mapping effects,
-        implementation variability, execution uncertainty, and resource constraints shape workflow
-        behavior, empirical reliability, and the validity of software-level interpretations. By combining
-        empirical software engineering, validation-centric design, and systems-level analysis, I aim to
-        make quantum software more auditable, reproducible, and technically robust under realistic
-        execution conditions.
-      </p>
-      <div class="button-row">
-        <a class="button-link" href="https://github.com/Bossy-Ye" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="button-link" href="https://scholar.google.com/citations?user=jIF6lpkAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a class="button-link" href="mailto:boshuai.ye@oulu.fi">Email</a>
+      <div class="hero-flex">
+        <!-- To add a portrait: place a photo at assets/portrait.jpg and uncomment the line below. -->
+        <!-- <img class="portrait" src="assets/portrait.jpg" alt="Portrait of Boshuai Ye" width="180" height="220"> -->
+        <div class="hero-text">
+          <h1>Boshuai Ye</h1>
+          <p class="subtitle">Doctoral Researcher, Quantum Software Engineering<br>
+          M3S Research Unit, University of Oulu, Finland</p>
+          <p class="hero-intro">
+            I am a doctoral researcher in the M3S Empirical Software Engineering Research Unit at the
+            University of Oulu, supervised by Assoc. Prof. Arif Ali Khan and co-supervised by
+            Dr. Marko Paavola (VTT Technical Research Centre of Finland). My research develops the
+            software engineering foundations for reliable quantum computing: toolchains that turn
+            classical problem specifications into executable, hardware-aware quantum workflows;
+            models of fault-tolerant execution under realistic resource constraints such as
+            magic-state delivery; and audit methods that test whether empirical claims in quantum
+            software remain stable under reproduction.
+          </p>
+          <p class="hero-intro">
+            I lead the development of <a href="https://github.com/C2-Q/C2Q" target="_blank" rel="noopener noreferrer">C2|Q⟩</a>,
+            a framework for compiling classical specifications into hybrid quantum workflows, published in
+            <em>ACM Transactions on Software Engineering and Methodology</em> (TOSEM, 2026), and of
+            <a href="https://github.com/Bossy-Ye/ClaimStab-QC" target="_blank" rel="noopener noreferrer">ClaimStab-QC</a>,
+            an audit framework for comparative claims in quantum software. Before my doctoral studies,
+            I completed an M.Sc. (Tech.) with Honours in computer science at Aalto University,
+            specialising in algorithms, logic, and computation, and in quantum technology.
+          </p>
+          <div class="button-row">
+            <a class="button-link" href="mailto:boshuai.ye@oulu.fi">Email</a>
+            <a class="button-link" href="assets/boshuai-ye-cv.pdf">CV (PDF)</a>
+            <a class="button-link" href="https://scholar.google.com/citations?user=jIF6lpkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a class="button-link" href="https://github.com/Bossy-Ye" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="button-link" href="https://orcid.org/0009-0000-3480-1234" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a class="button-link" href="https://www.linkedin.com/in/boshuai-ye-b0a739298/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Research Themes</h2>
-      <div class="grid theme-grid">
-        <article class="card">
-          <h3>Trustworthy Workflow Interpretation</h3>
-          <p>Studying how compilation and mapping effects, implementation variability, and execution uncertainty shape workflow behavior and the validity of software-level interpretations.</p>
-        </article>
-        <article class="card">
-          <h3>Reliable Execution Across Heterogeneous Infrastructures</h3>
-          <p>Designing and evaluating hybrid quantum workflows under resource constraints, scheduling effects, and heterogeneous execution conditions spanning classical and quantum components.</p>
-        </article>
-        <article class="card">
-          <h3>Auditable Empirical Validation</h3>
-          <p>Building executable, auditable research artifacts with pinned environments, repeatable runs, and evidence surfaces that support empirical reliability, independent verification, and re-validation.</p>
-        </article>
+      <div class="section-head">
+        <h2>Research</h2>
+        <a class="text-link" href="research.html">Research overview</a>
       </div>
+      <ul class="simple-list">
+        <li><strong>Quantum workflow generation.</strong> Compiling classical problem specifications into executable, hardware-aware hybrid quantum workflows (C2|Q⟩, TOSEM 2026).</li>
+        <li><strong>Fault-tolerant execution under resource constraints.</strong> Predicting execution slowdown when magic-state delivery, not circuit depth, bounds performance (IEEE QCE 2026).</li>
+        <li><strong>Evidence and claim stability in quantum software.</strong> Auditing whether published empirical comparisons hold within explicit, reproducible evidence boundaries (ClaimStab-QC).</li>
+      </ul>
     </section>
 
     <section class="section">
-      <p class="program-sentence">
-        My research program is organized around three connected questions: how workflow behavior should be
-        interpreted under variability, how execution remains reliable across heterogeneous infrastructures,
-        and how evidence can be made reproducible and auditable.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Selected Contributions</h2>
-      <ul class="simple-list contribution-list">
-        <li>Validation-centric analysis of how workflow behavior and conclusions shift under admissible variability.</li>
-        <li>Reliable hybrid quantum workflows across the classical-to-quantum bridge and heterogeneous execution settings.</li>
-        <li>Reproducible research artifacts and evidence surfaces for auditable empirical studies.</li>
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><span class="news-date">Sep 2026</span> Presenting <em>When T-Depth Misleads</em> at the IEEE International Conference on Quantum Computing and Engineering (QCE 2026), Toronto.</li>
+        <li><span class="news-date">Aug 2026</span> Served as Teaching Lead of the Quantum Software Engineering Summer School, University of Oulu (1–15 August).</li>
+        <li><span class="news-date">Jul 2026</span> C2|Q⟩ and its reusability &amp; replicability (RCR) report published in <em>ACM Transactions on Software Engineering and Methodology</em> (TOSEM).</li>
+        <li><span class="news-date">2026</span> Paper on fault-tolerant execution slowdown under magic-state delivery constraints accepted at IEEE QCE 2026.</li>
+        <li><span class="news-date">2026</span> Awarded a research grant by the Information Technology Research Foundation (Tietotekniikan tutkimussäätiö), Finland, for work on quantum workflow generation and hardware-aware execution.</li>
+        <li><span class="news-date">2026</span> Awarded research-visit funding through the SafeEarth Visitor Programme, University of Oulu.</li>
+        <li><span class="news-date">2026</span> Invited speaker at the Quantum Software Engineering workshop, LUT University.</li>
+        <li><span class="news-date">Feb 2025</span> Began doctoral studies at the M3S Research Unit, University of Oulu.</li>
+        <li><span class="news-date">Dec 2024</span> Completed the M.Sc. (Tech.) in Computer Science with Honours at Aalto University.</li>
       </ul>
     </section>
 
     <section class="section">
       <div class="section-head">
-        <h2>Featured Projects</h2>
-        <a class="text-link" href="projects.html">View all project notes</a>
+        <h2>Selected Publications</h2>
+        <a class="text-link" href="publications.html">Full list</a>
       </div>
-      <div class="grid two-col">
-        <article class="card project-card">
-          <h3>ClaimStab-QC</h3>
-          <p>A claim-centric validation framework for assessing whether reported quantum computing conclusions remain trustworthy under admissible implementation and execution variability.</p>
-          <p class="card-links">
-            <a href="https://github.com/Bossy-Ye/ClaimStab-QC" target="_blank" rel="noopener noreferrer">Repository</a>
-            <a href="https://bossy-ye.github.io/ClaimStab-QC/" target="_blank" rel="noopener noreferrer">Project Website</a>
-          </p>
-        </article>
-
-        <article class="card project-card">
-          <h3>BARC</h3>
-          <p>A systems-oriented study of execution slowdown under bounded resource delivery, using structural predictors, backlog-aware metrics, and lower-bound analysis to explain when static depth misleads executable performance.</p>
-          <p class="card-links">
-            <a href="https://github.com/C2-Q/BARC" target="_blank" rel="noopener noreferrer">Repository</a>
-          </p>
-        </article>
-
-        <article class="card project-card">
-          <h3>C2|Q&gt;</h3>
-          <p>A modular framework for translating classical problem specifications into executable hybrid quantum workflows, forming an early workflow foundation for later work on reliability, validation, and execution-aware analysis.</p>
-          <p class="card-links">
-            <a href="https://github.com/C2-Q/C2Q" target="_blank" rel="noopener noreferrer">Repository</a>
-            <a href="https://dl.acm.org/doi/10.1145/3803018" target="_blank" rel="noopener noreferrer">ACM DOI</a>
-          </p>
-        </article>
-
-        <article class="card project-card">
-          <h3>Quantum-Q-A-Mining</h3>
-          <p>An empirical study of developer questions and knowledge gaps in quantum software, aimed at understanding recurring challenges in practice and tool support.</p>
-          <p class="card-links">
-            <a href="https://github.com/Bossy-Ye/Quantum-Q-A-Mining" target="_blank" rel="noopener noreferrer">Repository</a>
-          </p>
-        </article>
-
-        <article class="card project-card">
-          <h3>qRaman-Batt</h3>
-          <p>An application-driven quantum workflow testbed used to study implementation reliability, evidence quality, and claim robustness in battery-related modeling tasks.</p>
-          <p class="card-links">
-            <a href="https://github.com/Bossy-Ye/qRaman-Batt" target="_blank" rel="noopener noreferrer">Repository</a>
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Selected Outputs</h2>
-        <a class="text-link" href="publications.html">Browse publications</a>
-      </div>
-      <p>
-        A curated list of papers, drafts, and research outputs is maintained on the publications page, with an emphasis on empirical validation, reproducible evidence, and reliable quantum workflows.
-      </p>
-      <ul class="simple-list">
-        <li>Selected papers with links to PDFs, preprints, or code artifacts.</li>
-        <li>Working papers and in-progress manuscripts on evidence-aware evaluation and reproducibility in quantum software.</li>
+      <ul class="pub-list">
+        <li>
+          <span class="pub-title">C2|Q⟩: A Robust Framework for Bridging Classical and Quantum Software Development</span><br>
+          <span class="pub-authors"><strong>B. Ye</strong>, A. A. Khan, T. Pihkakoski, P. Liang, M. A. Akbar, M. Silveri, L. Malmi</span><br>
+          <span class="pub-venue">ACM Transactions on Software Engineering and Methodology (TOSEM), 2026</span><br>
+          <span class="pub-links">
+            <a href="https://doi.org/10.1145/3803018" target="_blank" rel="noopener noreferrer">DOI</a>
+            <a href="https://arxiv.org/abs/2510.02854" target="_blank" rel="noopener noreferrer">arXiv</a>
+            <a href="https://github.com/C2-Q/C2Q" target="_blank" rel="noopener noreferrer">Code</a>
+          </span>
+        </li>
+        <li>
+          <span class="pub-title">When T-Depth Misleads: Predicting Fault-Tolerant Quantum Execution Slowdown under Magic-State Delivery Constraints</span><br>
+          <span class="pub-authors"><strong>B. Ye</strong>, A. A. Khan, P. Liang</span><br>
+          <span class="pub-venue">IEEE International Conference on Quantum Computing and Engineering (QCE), 2026, to appear</span><br>
+          <span class="pub-links">
+            <a href="https://arxiv.org/abs/2604.11409" target="_blank" rel="noopener noreferrer">arXiv</a>
+            <a href="https://github.com/C2-Q/BARC" target="_blank" rel="noopener noreferrer">Code</a>
+          </span>
+        </li>
+        <li>
+          <span class="pub-title">Auditing Empirical Comparisons in Quantum Software</span><br>
+          <span class="pub-authors"><strong>B. Ye</strong>, P. Liang, M. T. Sabzevari, A. A. Khan</span><br>
+          <span class="pub-venue">Under review, 2026</span><br>
+          <span class="pub-links">
+            <a href="https://arxiv.org/abs/2607.00516" target="_blank" rel="noopener noreferrer">arXiv</a>
+            <a href="https://github.com/Bossy-Ye/ClaimStab-QC" target="_blank" rel="noopener noreferrer">Code</a>
+          </span>
+        </li>
+        <li>
+          <span class="pub-title">C2|Q⟩: Unifying Classical and Quantum Programming</span><br>
+          <span class="pub-authors"><strong>B. Ye</strong></span><br>
+          <span class="pub-venue">ACM/SIGAPP Symposium on Applied Computing (SAC), Student Research Competition, 2025</span><br>
+          <span class="pub-links">
+            <a href="https://doi.org/10.1145/3672608.3707991" target="_blank" rel="noopener noreferrer">DOI</a>
+          </span>
+        </li>
       </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year">2026</span> Boshuai Ye. University of Oulu.</p>
+      <p>© 2026 Boshuai Ye · University of Oulu · Last updated August 2026</p>
     </div>
   </footer>
 </body>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Boshuai Ye</title>
+  <meta name="description" content="Research of Boshuai Ye: quantum workflow generation and hardware-aware execution, fault-tolerant execution under resource constraints, and empirical claim validation in quantum software.">
+  <link rel="canonical" href="https://bossy-ye.github.io/research.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23184d73'/%3E%3Ctext x='32' y='43' font-family='Georgia, serif' font-size='28' fill='%23ffffff' text-anchor='middle'%3EBY%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="index.html">Boshuai Ye</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="research.html" aria-current="page">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Research</h1>
+      <p class="lead">
+        Quantum computers are becoming engineered systems: programs pass through compilation,
+        mapping, scheduling, and error-corrected execution before they produce a result, and each
+        stage changes what the result means. My research treats this full stack as a software
+        engineering problem. I build toolchains that make the path from problem specification to
+        hardware execution explicit and repeatable, model where fault-tolerant execution actually
+        loses performance, and develop methods for checking that empirical claims about quantum
+        software survive reproduction. The common goal is quantum software whose behaviour, cost,
+        and reported evidence can be trusted.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Quantum workflow generation and hardware-aware execution</h2>
+      <p>
+        <a href="https://github.com/C2-Q/C2Q" target="_blank" rel="noopener noreferrer">C2|Q⟩</a> is a
+        hardware-agnostic framework that translates classical problem specifications — Python code or
+        structured JSON — into executable quantum workflows. It spans problem modelling, algorithm
+        selection, circuit generation, and hardware recommendation based on fidelity, runtime, and
+        cost. In our evaluation the framework covered ten optimisation problem families and selected
+        appropriate devices for workloads of up to 56 qubits across multiple backends. The work is
+        published in <em>ACM Transactions on Software Engineering and Methodology</em> (TOSEM, 2026)
+        with an ACM-badged reusability and replicability (RCR) report, and is developed within a
+        Business Finland–supported programme on practical quantum software tools.
+      </p>
+      <p class="pub-links">
+        <a href="https://doi.org/10.1145/3803018" target="_blank" rel="noopener noreferrer">TOSEM 2026</a>
+        <a href="https://arxiv.org/abs/2510.02854" target="_blank" rel="noopener noreferrer">arXiv</a>
+        <a href="https://github.com/C2-Q/C2Q" target="_blank" rel="noopener noreferrer">Code</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Fault-tolerant execution under resource constraints</h2>
+      <p>
+        On error-corrected hardware, non-Clifford operations consume magic states, and the rate at
+        which those states can be produced and delivered bounds how fast a circuit can run. This work
+        shows that static T-depth — the metric most compilation passes optimise — does not reliably
+        predict executable performance under bounded T-state delivery. We introduce schedule-level
+        indicators (a slack ratio capturing scheduling flexibility and Δ<sub>max</sub>, a measure of
+        cumulative demand surplus) that predict slowdown and yield a provable lower bound on
+        executable makespan. The accompanying artifact, BARC, supports backlog-aware analysis of
+        fault-tolerant execution schedules. The paper appears at the IEEE International Conference on
+        Quantum Computing and Engineering (QCE 2026).
+      </p>
+      <p class="pub-links">
+        <a href="https://arxiv.org/abs/2604.11409" target="_blank" rel="noopener noreferrer">arXiv</a>
+        <a href="https://github.com/C2-Q/BARC" target="_blank" rel="noopener noreferrer">Code</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Evidence quality and claim stability in quantum software</h2>
+      <p>
+        Empirical quantum-software papers routinely report comparative claims — one compiler produces
+        smaller circuits, one optimiser converges faster, one backend is more efficient.
+        <a href="https://github.com/Bossy-Ye/ClaimStab-QC" target="_blank" rel="noopener noreferrer">ClaimStab-QC</a>
+        is an audit framework that asks whether such claims are supported by matched evidence exposed
+        in the source paper or artifact, using explicit evidence records, locked audit designs, and
+        scoped stability outcomes. Related empirical work mines developer Q&amp;A platforms for
+        evidence on how quantum software is programmed in practice. This line of work aims to give
+        the field a systematic way to know which reported results remain supported when re-examined.
+      </p>
+      <p class="pub-links">
+        <a href="https://arxiv.org/abs/2607.00516" target="_blank" rel="noopener noreferrer">arXiv (audit framework)</a>
+        <a href="https://arxiv.org/abs/2503.05240" target="_blank" rel="noopener noreferrer">arXiv (Q&amp;A mining)</a>
+        <a href="https://bossy-ye.github.io/ClaimStab-QC/" target="_blank" rel="noopener noreferrer">Project site</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Ongoing directions</h2>
+      <p>
+        Current work examines synthesis availability across quantum compilation boundaries — how
+        design choices made at one layer of the toolchain constrain what lower layers can still
+        synthesise (manuscript under review) — and HPC-supported exploration for reliable workflow
+        decision-making across heterogeneous classical–quantum infrastructures.
+      </p>
+      <p>
+        I welcome conversations about collaboration and research visits in these areas, particularly
+        with groups working on fault-tolerant compilation and execution, quantum software toolchains
+        and design automation, and quantum–HPC integration. Funded mobility for a research visit is
+        in place through the University of Oulu's SafeEarth Visitor Programme.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Research Software</h2>
+      <div class="grid two-col">
+        <article class="card project-card">
+          <h3>C2|Q⟩</h3>
+          <p>Modular framework translating classical problem specifications into executable hybrid quantum workflows, with algorithm selection and hardware recommendation. Open source, with a PyPI package for CLI and API use.</p>
+          <p class="card-links">
+            <a href="https://github.com/C2-Q/C2Q" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="https://doi.org/10.1145/3803018" target="_blank" rel="noopener noreferrer">Paper</a>
+          </p>
+        </article>
+        <article class="card project-card">
+          <h3>ClaimStab-QC</h3>
+          <p>Source-bounded audit framework for the stability of empirical comparative claims in quantum software: explicit evidence records, locked audit designs, scoped stability outcomes.</p>
+          <p class="card-links">
+            <a href="https://github.com/Bossy-Ye/ClaimStab-QC" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="https://bossy-ye.github.io/ClaimStab-QC/" target="_blank" rel="noopener noreferrer">Project site</a>
+          </p>
+        </article>
+        <article class="card project-card">
+          <h3>BARC</h3>
+          <p>Backlog-aware analysis of fault-tolerant execution schedules under bounded magic-state delivery: structural predictors, slowdown estimation, and lower-bound analysis.</p>
+          <p class="card-links">
+            <a href="https://github.com/C2-Q/BARC" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="https://arxiv.org/abs/2604.11409" target="_blank" rel="noopener noreferrer">Paper</a>
+          </p>
+        </article>
+        <article class="card project-card">
+          <h3>Quantum-Q&amp;A-Mining</h3>
+          <p>Dataset and analysis pipeline for mining developer Q&amp;A platforms for empirical evidence on quantum software programming practice.</p>
+          <p class="card-links">
+            <a href="https://github.com/Bossy-Ye/Quantum-Q-A-Mining" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="https://arxiv.org/abs/2503.05240" target="_blank" rel="noopener noreferrer">Paper</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Boshuai Ye · University of Oulu · Last updated August 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
