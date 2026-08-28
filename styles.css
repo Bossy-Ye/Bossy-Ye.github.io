@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
   line-height: 1.65;
   color: var(--text);
   background: var(--background);
@@ -121,15 +121,20 @@ p {
 }
 
 .hero {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
 }
 
-.eyebrow {
-  margin-bottom: 0.5rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  font-size: 0.77rem;
+.hero-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.portrait {
+  flex-shrink: 0;
+  width: 180px;
+  height: auto;
+  border: 1px solid var(--line);
 }
 
 .subtitle {
@@ -140,7 +145,12 @@ p {
 
 .hero-intro {
   max-width: 50rem;
-  font-size: 1.06rem;
+  font-size: 1.04rem;
+}
+
+.lead {
+  max-width: 50rem;
+  font-size: 1.04rem;
 }
 
 .button-row {
@@ -190,22 +200,10 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.theme-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .card {
   border: 1px solid var(--line);
   background: var(--surface);
   padding: 1rem 1.1rem;
-}
-
-.tag {
-  margin-bottom: 0.35rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.72rem;
 }
 
 .card-links {
@@ -214,8 +212,8 @@ p {
 }
 
 .card-links a + a::before {
-  content: " | ";
-  color: var(--line);
+  content: " · ";
+  color: var(--muted);
   margin: 0 0.28rem 0 0.2rem;
 }
 
@@ -228,35 +226,98 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.contribution-list {
-  max-width: 48rem;
+/* News */
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 52rem;
 }
 
-.program-sentence {
-  max-width: 50rem;
-  font-size: 1.02rem;
-  color: var(--text);
+.news-list li {
+  margin-bottom: 0.55rem;
+  padding-left: 6.6rem;
+  position: relative;
 }
 
-.paper-section {
-  margin-bottom: 2.3rem;
+.news-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  white-space: nowrap;
 }
 
-.paper-list {
+/* Publications */
+
+.pub-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.paper-list li {
-  border-left: 2px solid var(--line);
-  padding-left: 0.9rem;
-  margin-bottom: 1rem;
+.pub-list li {
+  margin-bottom: 1.25rem;
+  max-width: 52rem;
 }
 
-.paper-meta {
+.pub-title {
+  font-weight: 600;
+  color: #171b25;
+}
+
+.pub-authors {
+  font-size: 0.97rem;
+}
+
+.pub-venue {
+  font-style: italic;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.pub-links {
+  font-size: 0.92rem;
+}
+
+.pub-links a {
+  margin-right: 0.15rem;
+}
+
+.pub-links a + a::before {
+  content: "· ";
+  color: var(--muted);
+  margin-right: 0.15rem;
+}
+
+.pub-note {
+  margin: 0.3rem 0 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* CV rows */
+
+.cv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-row {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 0.4rem 1.2rem;
+  margin-bottom: 0.9rem;
+  max-width: 52rem;
+}
+
+.cv-date {
+  color: var(--muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .keyword-list {
@@ -315,12 +376,26 @@ p {
     flex-direction: column;
   }
 
+  .hero-flex {
+    flex-direction: column;
+  }
+
   .two-col {
     grid-template-columns: 1fr;
   }
 
-  .theme-grid {
+  .news-list li {
+    padding-left: 0;
+  }
+
+  .news-date {
+    position: static;
+    display: block;
+  }
+
+  .cv-row {
     grid-template-columns: 1fr;
+    gap: 0.1rem;
   }
 
   main {
