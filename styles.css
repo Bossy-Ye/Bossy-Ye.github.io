@@ -311,7 +311,7 @@ p {
 
 .cv-row {
   display: grid;
-  grid-template-columns: 8rem minmax(0, 1fr);
+  grid-template-columns: 10.5rem minmax(0, 1fr);
   gap: 0.4rem 1.2rem;
   margin-bottom: 0.9rem;
   max-width: 52rem;
