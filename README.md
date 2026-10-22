@@ -5,7 +5,11 @@ engineering at the M3S Research Unit, University of Oulu.
 
 Live at [bossy-ye.github.io](https://bossy-ye.github.io/).
 
-Plain HTML/CSS, no build step. Pages: home (`index.html`), research, publications,
-teaching & service, CV, contact. The CV PDF lives in `assets/boshuai-ye-cv.pdf`;
-replace that file to update the downloadable CV. `about.html` and `projects.html`
-are redirects kept for old links.
+Plain HTML and CSS, no build step and no JavaScript. Pages: `index.html`,
+`research.html`, `publications.html`, `cv.html`, `contact.html`. `about.html`,
+`projects.html` and `teaching.html` are redirects that keep older links working.
+
+The downloadable CV is `assets/boshuai-ye-cv.pdf`; replace that file to update it.
+
+A GitHub Actions workflow checks every link on push, on pull requests and weekly.
+Hosts that reject automated requests are listed in `.lycheeignore`.

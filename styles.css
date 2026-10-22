@@ -124,18 +124,7 @@ p {
   margin-bottom: 3rem;
 }
 
-.hero-flex {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-}
 
-.portrait {
-  flex-shrink: 0;
-  width: 180px;
-  height: auto;
-  border: 1px solid var(--line);
-}
 
 .subtitle {
   color: var(--muted);
@@ -292,6 +281,20 @@ p {
   margin-right: 0.15rem;
 }
 
+.status {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.02rem 0.42rem;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
 .pub-note {
   margin: 0.3rem 0 0;
   font-size: 0.92rem;
@@ -376,9 +379,6 @@ p {
     flex-direction: column;
   }
 
-  .hero-flex {
-    flex-direction: column;
-  }
 
   .two-col {
     grid-template-columns: 1fr;

@@ -1,0 +1,8 @@
+# Hosts that block automated requests and would otherwise fail the run.
+# Everything else - GitHub repositories, project sites, arXiv - stays checked,
+# since those are where links actually rot.
+https://scholar\.google\.com/.*
+https://www\.linkedin\.com/.*
+https://dl\.acm\.org/.*
+https://doi\.org/.*
+https://aaltodoc\.aalto\.fi/.*
