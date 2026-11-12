@@ -4,162 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV — Boshuai Ye</title>
-  <meta name="description" content="Curriculum vitae of Boshuai Ye: positions, education, funding and awards, teaching, supervision, service and technical skills in quantum software engineering.">
+  <meta name="description" content="Curriculum vitae of Boshuai Ye: positions, education, funding and awards, and skills in quantum software engineering.">
   <link rel="canonical" href="https://bossy-ye.github.io/cv.html">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23184d73'/%3E%3Ctext x='32' y='43' font-family='Georgia, serif' font-size='28' fill='%23ffffff' text-anchor='middle'%3EBY%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23236e85'/%3E%3Ctext x='32' y='43' font-family='Helvetica, Arial, sans-serif' font-size='26' font-weight='600' fill='%23ffffff' text-anchor='middle'%3EBY%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="site-name" href="index.html">Boshuai Ye</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="site-title" href="index.html">Boshuai Ye</a>
       <nav aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="research.html">Research</a></li>
+        <ul class="nav">
           <li><a href="publications.html">Publications</a></li>
-          <li><a class="active" href="cv.html" aria-current="page">CV</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" aria-current="page" href="cv.html">CV</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h1>Curriculum Vitae</h1>
-      <p><a class="button-link" href="assets/boshuai-ye-cv.pdf">Download CV (PDF)</a></p>
-    </section>
+  <div class="layout">
+    <aside class="sidebar">
+      <!-- Portrait: save a square photo as assets/portrait.jpg, then uncomment. -->
+      <!-- <img class="avatar" src="assets/portrait.jpg" alt="Boshuai Ye" width="160" height="160"> -->
+      <h2 class="author-name">Boshuai Ye</h2>
+      <p class="author-bio">Doctoral Researcher<br>University of Oulu</p>
+      <ul class="author-urls">
+        <li><i class="fa-solid fa-fw fa-location-dot" aria-hidden="true"></i> Oulu, Finland</li>
+        <li><a href="mailto:boshuai.ye@oulu.fi"><i class="fa-solid fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=jIF6lpkAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+        <li><a href="https://github.com/Bossy-Ye" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <li><a href="https://orcid.org/0009-0000-3480-1234" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-fw fa-orcid" aria-hidden="true"></i> ORCID</a></li>
+        <li><a href="https://www.linkedin.com/in/boshuai-ye-b0a739298/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      </ul>
+    </aside>
 
-    <section class="section">
+    <main class="page">
+      <h1 class="page-title">CV</h1>
+      <p><a href="assets/boshuai-ye-cv.pdf">[download pdf]</a></p>
+
       <h2>Positions</h2>
       <ul class="cv-list">
-        <li class="cv-row">
-          <span class="cv-date">Feb 2025–present</span>
-          <span class="cv-body"><strong>Doctoral Researcher</strong>, M3S Empirical Software Engineering Research Unit, University of Oulu.
-          Supervisor: Assoc. Prof. Arif Ali Khan; co-supervisor: Dr. Marko Paavola, VTT Technical Research Centre of Finland.</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">Jun 2024–Feb 2025</span>
-          <span class="cv-body"><strong>Junior Researcher</strong>, M3S Empirical Software Engineering Research Unit, University of Oulu.
-          Led the design and implementation of C2|Q⟩ and its evaluation on production quantum toolchains.</span>
-        </li>
+        <li class="cv-row"><span class="cv-date">Feb 2025–present</span><span class="cv-body"><strong>Doctoral Researcher</strong>, M3S Empirical Software Engineering Research Unit, University of Oulu. Advisor: Assoc. Prof. Arif Ali Khan; co-advisor: Dr. Marko Paavola, VTT Technical Research Centre of Finland.</span></li>
+        <li class="cv-row"><span class="cv-date">Jun 2024–Feb 2025</span><span class="cv-body"><strong>Junior Researcher</strong>, M3S Empirical Software Engineering Research Unit, University of Oulu. Led the design and implementation of C2|Q⟩.</span></li>
       </ul>
-    </section>
 
-    <section class="section">
       <h2>Education</h2>
       <ul class="cv-list">
-        <li class="cv-row">
-          <span class="cv-date">Sep 2023–Dec 2024</span>
-          <span class="cv-body"><strong>M.Sc. (Tech.), Computer Science</strong>, Aalto University. Awarded with Honours.
-          Specialisation: algorithms, logic and computation; quantum technology. GPA 4.71/5.00.</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">Sep 2019–Jun 2023</span>
-          <span class="cv-body"><strong>B.Sc., Information Processing Science</strong>, University of Oulu.
-          Specialisation: software engineering. GPA 4.02/5.00.</span>
-        </li>
+        <li class="cv-row"><span class="cv-date">Sep 2023–Dec 2024</span><span class="cv-body"><strong>M.Sc. (Tech.), Computer Science</strong>, Aalto University. Awarded with Honours. Algorithms, logic and computation; quantum technology. GPA 4.71/5.00.</span></li>
+        <li class="cv-row"><span class="cv-date">Sep 2019–Jun 2023</span><span class="cv-body"><strong>B.Sc., Information Processing Science</strong>, University of Oulu. Software engineering. GPA 4.02/5.00.</span></li>
       </ul>
-    </section>
 
-    <section class="section">
       <h2>Funding and Awards</h2>
       <ul class="cv-list">
-        <li class="cv-row">
-          <span class="cv-date">2026</span>
-          <span class="cv-body">Research grant, Information Technology Research Foundation (Tietotekniikan tutkimussäätiö), Finland — <em>Software Engineering Support for Quantum Workflow Generation and Hardware-Aware Execution</em>.</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">2026</span>
-          <span class="cv-body">Research-visit funding, SafeEarth Visitor Programme, University of Oulu.</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">2023–2025</span>
-          <span class="cv-body">Full scholarship, M.Sc. programme, Aalto University.</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">2022</span>
-          <span class="cv-body">Honours Student, University of Oulu.</span>
-        </li>
+        <li class="cv-row"><span class="cv-date">2026</span><span class="cv-body">Research grant, Information Technology Research Foundation (Tietotekniikan tutkimussäätiö), Finland — <em>Software Engineering Support for Quantum Workflow Generation and Hardware-Aware Execution</em>.</span></li>
+        <li class="cv-row"><span class="cv-date">2026</span><span class="cv-body">Research-visit funding, SafeEarth Visitor Programme, University of Oulu.</span></li>
+        <li class="cv-row"><span class="cv-date">2023–2025</span><span class="cv-body">Full scholarship, M.Sc. programme, Aalto University.</span></li>
+        <li class="cv-row"><span class="cv-date">2022</span><span class="cv-body">Honours Student, University of Oulu.</span></li>
       </ul>
-    </section>
 
-    <section class="section">
-      <h2>Teaching</h2>
-      <ul class="cv-list">
-        <li class="cv-row">
-          <span class="cv-date">2026</span>
-          <span class="cv-body"><strong>Teaching Lead</strong>, Quantum Software Engineering Summer School, University of Oulu.
-          Led lectures and technical sessions on quantum computing, software tools, algorithms and development workflows.</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">2026</span>
-          <span class="cv-body"><strong>Invited speaker</strong>, Quantum Software Engineering workshop, LUT University.</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">2025–2026</span>
-          <span class="cv-body"><strong>Teaching Assistant</strong>, Next Generation of Quantum Software Engineering, University of Oulu (Spring 2025, Spring 2026).</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">2025</span>
-          <span class="cv-body"><strong>Invited lecturer</strong>, Quantum Software Engineering course, LUT University.</span>
-        </li>
-      </ul>
-    </section>
+      <h2>Skills</h2>
+      <p>Qiskit, PennyLane, OpenQASM and circuit IRs, transpilation and noise-aware compilation,
+      hybrid classical–quantum programming, fault-tolerant resource estimation; Python, C/C++;
+      Linux, Git, Docker, CI/CD.</p>
 
-    <section class="section">
-      <h2>Supervision</h2>
-      <ul class="cv-list">
-        <li class="cv-row">
-          <span class="cv-date">2025–2026</span>
-          <span class="cv-body">Co-supervised Sang Vo's M.Sc. thesis, <em>Quantum-Enhanced CNN for Highly Accurate Breast Cancer Classification</em>, University of Oulu.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Service</h2>
-      <ul class="cv-list">
-        <li class="cv-row">
-          <span class="cv-date">Reviewing</span>
-          <span class="cv-body">ACM International Workshop on Quantum Software Engineering (Q-SE).</span>
-        </li>
-        <li class="cv-row">
-          <span class="cv-date">Open science</span>
-          <span class="cv-body">Research artifacts released publicly with reproducibility instructions; manuscripts deposited on arXiv.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Technical Skills</h2>
-      <ul class="keyword-list">
-        <li>Qiskit</li>
-        <li>PennyLane</li>
-        <li>OpenQASM and circuit IRs</li>
-        <li>Transpilation and noise-aware compilation</li>
-        <li>Hybrid classical–quantum programming</li>
-        <li>Fault-tolerant resource estimation</li>
-        <li>Python</li>
-        <li>C/C++</li>
-        <li>Linux</li>
-        <li>Git</li>
-        <li>Docker</li>
-        <li>CI/CD</li>
-      </ul>
-    </section>
-
-    <section class="section">
       <h2>Languages</h2>
-      <p>Chinese (native) · English (professional working proficiency)</p>
-    </section>
-  </main>
+      <p>Chinese (native), English (professional working proficiency).</p>
+
+      <p class="muted">Teaching and service are listed on the <a href="index.html#teaching">home page</a>.</p>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Boshuai Ye · University of Oulu</p>
-    </div>
+    <p>© 2026 Boshuai Ye</p>
   </footer>
 </body>
 </html>
