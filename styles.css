@@ -182,6 +182,11 @@ p {
   margin: 0 0 1rem;
 }
 
+.lead {
+  font-size: 1.1rem;
+  color: var(--heading);
+}
+
 .muted {
   color: var(--muted);
   font-size: 0.9rem;
